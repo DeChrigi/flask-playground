@@ -23,9 +23,16 @@
     <div class="container-fluid">
         <form>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Number</label>
-                <input type="text" onkeyup="inputChanged(event);" class="form-control" id="numberInput"
+                <label for="numberInput1">Number 1</label>
+                <input type="text" class="form-control" id="numberInput1"
                     placeholder="Your number">
+                <label for="numberInput2">Number 2</label>
+                    <input type="text" class="form-control" id="numberInput2"
+                        placeholder="Your number">
+            </br>
+            <button id="calculateButton" class="btn btn-primary" onclick="buttonPressed(event);">Calculate</button>
+            </br>
+            </br>
                 <label for="result">Result</label>
                 <input type="text" class="form-control" id="result"
                     placeholder="Result" disabled>

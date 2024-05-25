@@ -27,7 +27,8 @@ def show_subpath(subpath):
 def sum_even():
     # flask parameters with type and default
     n = request.args.get('n', default=1, type=int)
+    n2 = request.args.get('n2', default=1, type=int) 
     # logic
-    result = sum([x for x in range(n+1) if x % 2 == 0])
+    result = n + n2
     # return result as json
     return jsonify(sum=result)
